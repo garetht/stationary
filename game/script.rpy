@@ -22,6 +22,10 @@ transform fade_in:
   alpha 0.0
   linear 0.5 alpha 1.0
 
+transform richard_collapsed_zoom:
+  zoom 0.45
+  center
+
 transform zoom_upwards_to_half:
   zoom 0.40
   xalign 0.5
@@ -88,7 +92,7 @@ transform come_in_from_right:
 #     # add a file (named either "bg room.png" or "bg room.jpg") to the
 #     # images directory to show it.
 #
-#     scene bg rink with fade
+#     scene bg ring with fade
 #
 #     # This shows a character sprite. A placeholder is used, but you can
 #     # replace it by adding a file named "eileen happy.png" to the images
@@ -315,7 +319,7 @@ label start:
 #
 #     Carys "I do my warmups. I do my breathing exercises. I go out into the ring."
 #
-#     scene bg rink with wiperight
+#     scene bg ring with wiperight
 #
 #     show carys neutral at center, carys_neutral_zoom_out
 #
@@ -323,7 +327,7 @@ label start:
 #
 #     Carys "I face Richard here. It's all on video. {w}But appearances can be deceiving."
 #
-#     scene bg rink past with pixellate
+#     scene bg ring past with pixellate
 #
 #     show carys boxing at come_in_from_left
 #     show richard boxing at come_in_from_right
@@ -349,7 +353,7 @@ label start:
 #     Carys "The crowd goes wild. They know who he is, what he does."
 #     Carys "I've done my part. I have them on my side. I think it's time to go home."
 #
-#     scene bg rink with pixellate
+#     scene bg ring with pixellate
 #
 #     show carys neutral at norm_left
 #     show gwen neutral at norm_right
@@ -358,7 +362,7 @@ label start:
 #
 #     Carys "It's the truth. I should have gone home, but I didn't. {w}I was ready to leave. I wanted to leave."
 
-    scene bg rink past with pixellate
+    scene bg ring past with pixellate
 
     show carys victorious at norm_center
 
@@ -370,11 +374,44 @@ label start:
 
     Carys "Then I hear think I hear the crowd chanting: 'finish him, finish him'."
 
-    scene bg rin
+    scene bg ring ropes with wiperight
 
-    Carys "I look down at him, slumped, eyes closed."
+    show richard collapsed at richard_collapsed_zoom
+
+    Carys "I look down at him, slumped, eyes closed. He is finished, I know. He is done. Done for."
 
     Carys "But then I cannot hear anything else."
+
+    Carys "In that moment, surrounded and safe, it felt so right, do you see? The support and love of a crowd is difficult to ignore."
+
+    Carys "I had to give, and they had to take."
+
+    Carys "You've seen this part before. But you have to keep watching, please."
+
+    Carys "I stride up to him and with anger and rage and right on my side I strike."
+
+    show bg ring ropes with hpunch
+    pause 1.0
+
+    Carys "I clutch my gloved fist in disbelief, and horror maybe, fighting against myself."
+
+
+    Carys "Is this my hand, or an instrument of the crowd?"
+
+    Carys "And then I do it again."
+
+    show bg ring ropes with vpunch
+    pause 1.0
+
+    scene bg ring with pixellate
+
+    show carys neutral at norm_left
+    show gwen neutral at norm_right
+
+    Gwen "And then he goes still."
+
+    Carys ""
+
     return
 
 
