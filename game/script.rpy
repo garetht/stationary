@@ -124,10 +124,6 @@ transform come_in_from_right:
 #
 #     Carys "The crowd wants it all. If you give in they take it all."
 #
-#     Carys "That's right, people! Give it up for this wonder of the world."
-#
-#     Carys "What new spectacle, gentlehuman?"
-#
 #     Carys "What glorious violence can I unleash?"
 #
 #     show carys angry boxing at zoom_upwards_to_half
@@ -165,7 +161,7 @@ label start:
 #
 #     show carys neutral at center, carys_neutral_zoom_out
 #
-#     Carys "{i}Oh god. Someone's here.{/i}"
+#     Carys "{i}Oh god. Someone's actually here.{/i}"
 #
 #     show carys neutral at center_to_left
 #     show gwen smiling at come_in_from_right
@@ -325,21 +321,27 @@ label start:
 #
 #     Carys "This is the ring, the sacred space. The boxing ring.{w} My boxing ring."
 #
-#     Carys "I face Richard here. It's all on video. {w}But appearances can be deceiving."
-#
+#     Carys "I face Richard here. It's all on video. {w}But a video is just appearance."
+# #
 #     scene bg ring past with pixellate
 #
 #     show carys boxing at come_in_from_left
 #     show richard boxing at come_in_from_right
 #
+#     Carys "The crowd cheers. For me, taking on an undeserving upstart? For him, daring to try?"
+#
 #     Carys "He is undisciplined and careless. He doesn't perform well."
+#
+#     Carys "The crowd jeers. For me, accepting this unworthy debut?"
+#
+#     Carys "It must be on me. I try harder to please them. I surge forward with more fury."
 #
 #     show carys punching
 #
 #     Carys "Round after round he goes down in front of the cameras."
 #
 #     Carys "And then at last he stays down."
-#
+# #
 #     show richard boxing at fade_out
 #     pause 1.0
 #     hide richard
@@ -350,7 +352,8 @@ label start:
 #     pause 1.0
 #     show carys victorious at fade_in
 #
-#     Carys "The crowd goes wild. They know who he is, what he does."
+#     Carys "The crowd goes wild. Of course they know who he is, how he has gotten here."
+#
 #     Carys "I've done my part. I have them on my side. I think it's time to go home."
 #
 #     scene bg ring with pixellate
@@ -361,26 +364,28 @@ label start:
 #     Gwen "For real?"
 #
 #     Carys "It's the truth. I should have gone home, but I didn't. {w}I was ready to leave. I wanted to leave."
-
-    scene bg ring past with pixellate
-
-    show carys victorious at norm_center
-
-    Carys "But I want the applause. The praise and glory wrap me in their embrace."
-
-    Carys "That's right, people! Give it up for this wonder of the world."
-
-    Carys "What new spectacle, gentlehuman?"
-
-    Carys "Then I hear think I hear the crowd chanting: 'finish him, finish him'."
-
+#
+#     scene bg ring past with pixellate
+#
+#     show carys victorious at norm_center
+#
+#     Carys "But I want the applause. The praise and glory wrap me in their embrace."
+#
+#     Carys "That's right, people! Give it up for this wonder of the world."
+#
+#     Carys "What new spectacle, gentlehuman?"
+#
+#     Carys "Then I hear think I hear the crowd chanting. In that terrible din I try to make out the words."
+#
+#     Carys "They're saying 'finish him, finish him'."
+#
     scene bg ring ropes with wiperight
 
     show richard collapsed at richard_collapsed_zoom
 
     Carys "I look down at him, slumped, eyes closed. He is finished, I know. He is done. Done for."
 
-    Carys "But then I cannot hear anything else."
+    Carys "But then I cannot hear anything else but this infernal chant."
 
     Carys "In that moment, surrounded and safe, it felt so right, do you see? The support and love of a crowd is difficult to ignore."
 
@@ -388,29 +393,28 @@ label start:
 
     Carys "You've seen this part before. But you have to keep watching, please."
 
-    Carys "I stride up to him and with anger and rage and right on my side I strike."
+    Carys "I stride up to him."
 
-    show bg ring ropes with hpunch
-    pause 1.0
+    Carys "I am rage and righteousness, and I strike."
 
-    Carys "I clutch my gloved fist in disbelief, and horror maybe, fighting against myself."
+    show bg avatar rage with fade
 
+    Carys "I clutch my gloved fist in disbelief, fighting against what I am becoming, or have become."
 
     Carys "Is this my hand, or an instrument of the crowd?"
 
-    Carys "And then I do it again."
+    Carys "My ears are ringing, and suddenly the chant dissolves."
 
-    show bg ring ropes with vpunch
-    pause 1.0
+    Carys "I see through my haze a vision of a match in honor, among equals. And glory, applause for skill and finesse, not out of reach yet, surely not."
 
-    scene bg ring with pixellate
+    Carys "I take a sharp breath and my curled fist goes limp."
+
+    scene bg busstop left with pixellate
 
     show carys neutral at norm_left
     show gwen neutral at norm_right
 
-    Gwen "And then he goes still."
-
-    Carys ""
+    Carys "He goes still. The lights come on. The crowd is quiet. Security removes me."
 
     return
 
